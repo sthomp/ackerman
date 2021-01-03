@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 // markup
 const IndexPage = () => {
   const images = useStaticQuery(graphql`
-    query MyQuery {
+    query IndexQuery {
       survey: file(relativePath: { eq: "ackerman_survey.jpg" }) {
         childImageSharp {
           fluid {
