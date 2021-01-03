@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 // markup
 const IndexPage = () => {
   const images = useStaticQuery(graphql`
-    query IndexQuery {
+    query SomeQuery {
       survey: file(relativePath: { eq: "ackerman_survey.jpg" }) {
         childImageSharp {
           fluid {
@@ -21,27 +21,11 @@ const IndexPage = () => {
           }
         }
       }
-
-      zillow1: remoteImagesYaml(name: { eq: "Zillow Image1" }) {
-        name
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
     }
   `);
-  console.log(images.zillow1);
   return (
     <main>
       <title>Home Page</title>
-      <Img
-        fluid={images.zillow1.localImage.childImageSharp.fluid}
-        alt="New Beam"
-      />
       <Img fluid={images.survey.childImageSharp.fluid} alt="Land Survey" />
       <Img fluid={images.beam.childImageSharp.fluid} alt="New Beam" />
       <iframe
