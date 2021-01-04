@@ -88,8 +88,9 @@ const IndexPage = () => {
             Ackerman House · Beacon NY
           </h1>
           <p className="text-gray-400 font-light">Built in 1836</p>
-          <p className="text-gray-400 font-light">Brick Foundation</p>
-          <p className="text-gray-400 font-light">Wood Frame</p>
+          <p className="text-gray-400 font-light">
+            Construction: Brick Foundation · Wood Frame
+          </p>
         </div>
         <div className="bg-yellow-500 absolute w-full h-full z-0">
           <Img
