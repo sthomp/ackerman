@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'ackerman',
   },
-  pathPrefix: '/ackerman',
+  pathPrefix: `/ackerman`,
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-sharp`,
