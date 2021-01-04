@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
+import Layout from '../components/layout';
 
 const InspirationPage = () => {
   const images = useStaticQuery(graphql`
@@ -77,59 +78,47 @@ const InspirationPage = () => {
     }
   `);
   return (
-    <main>
-      <div className="container mx-auto px-4">
-        <h1>Inspiration</h1>
-        <div>
-          <p>Interior</p>
-          <p>Exposed Brick Column * Beam * Wide Plank Flooring</p>
-          <Img
-            fluid={images._6_spring_interior.localImage.childImageSharp.fluid}
-            alt="6 Spring Interior"
-          />
-          <Img
-            fluid={images._38_saint_lukes.localImage.childImageSharp.fluid}
-            alt="38 Saint Lukes"
-          />
-        </div>
-        <div>
-          <p>Entry Way</p>
-          <Img
-            fluid={
-              images._27_ackerman_exterior.localImage.childImageSharp.fluid
-            }
-            alt="27 Ackerman"
-          />
-        </div>
-        <div>
-          <p>Outdoor Space</p>
-          <Img
-            fluid={images._6_spring_patio.localImage.childImageSharp.fluid}
-            alt="6 Spring Patio"
-          />
-        </div>
-        <div>
-          <p>Secondary Bathroom</p>
-          <Img
-            fluid={images.half_bath1.childImageSharp.fluid}
-            alt="Half Bath1"
-          />
-          <Img
-            fluid={images.half_bath2.childImageSharp.fluid}
-            alt="Half Bath2"
-          />
-        </div>
-        <div>
-          <p>Master Bedroom</p>
-          <Img
-            fluid={
-              images._23_n_cedar_master_bed.localImage.childImageSharp.fluid
-            }
-            alt="_23_n_cedar_master_bed"
-          />
-        </div>
+    <Layout>
+      <h1>Inspiration</h1>
+      <div>
+        <p>Interior</p>
+        <p>Exposed Brick Column * Beam * Wide Plank Flooring</p>
+        <Img
+          fluid={images._6_spring_interior.localImage.childImageSharp.fluid}
+          alt="6 Spring Interior"
+        />
+        <Img
+          fluid={images._38_saint_lukes.localImage.childImageSharp.fluid}
+          alt="38 Saint Lukes"
+        />
       </div>
-    </main>
+      <div>
+        <p>Entry Way</p>
+        <Img
+          fluid={images._27_ackerman_exterior.localImage.childImageSharp.fluid}
+          alt="27 Ackerman"
+        />
+      </div>
+      <div>
+        <p>Outdoor Space</p>
+        <Img
+          fluid={images._6_spring_patio.localImage.childImageSharp.fluid}
+          alt="6 Spring Patio"
+        />
+      </div>
+      <div>
+        <p>Secondary Bathroom</p>
+        <Img fluid={images.half_bath1.childImageSharp.fluid} alt="Half Bath1" />
+        <Img fluid={images.half_bath2.childImageSharp.fluid} alt="Half Bath2" />
+      </div>
+      <div>
+        <p>Master Bedroom</p>
+        <Img
+          fluid={images._23_n_cedar_master_bed.localImage.childImageSharp.fluid}
+          alt="_23_n_cedar_master_bed"
+        />
+      </div>
+    </Layout>
   );
 };
 

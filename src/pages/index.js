@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
+import Layout from '../components/layout';
 
 // markup
 const IndexPage = () => {
@@ -80,7 +81,7 @@ const IndexPage = () => {
     }
   `);
   return (
-    <main>
+    <Layout>
       <title>Home Page</title>
       <Img fluid={images.survey.childImageSharp.fluid} alt="Land Survey" />
       <Img fluid={images.beam.childImageSharp.fluid} alt="New Beam" />
@@ -102,7 +103,7 @@ const IndexPage = () => {
         mozallowfullscreen="true"
         allowFullScreen
       />
-    </main>
+    </Layout>
   );
 };
 
