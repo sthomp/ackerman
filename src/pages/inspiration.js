@@ -86,7 +86,7 @@ const InspirationPage = () => {
       <div className='py-8' />
       <AutoGallery
         title='Living Room'
-        subtitle='Exposed Brick Column * Beam * Wide Plank Flooring'
+        subtitle='Exposed Brick Column · Exposed Beam · Wide Plank Flooring'
         items={[
           <Img
             fluid={images._6_spring_interior.localImage.childImageSharp.fluid}
@@ -102,6 +102,7 @@ const InspirationPage = () => {
       <Spotlight
         imageFirst={true}
         title='Entry Way'
+        subtitle='Small Outdoor Porch · Living Room Extension'
         content={
           <Img
             fluid={
@@ -114,6 +115,7 @@ const InspirationPage = () => {
       <Spotlight
         imageFirst={false}
         title='Outdoor Space'
+        subtitle='Low Upkeep · No Grass · Space to relax and BBQ'
         content={
           <Img
             fluid={images._6_spring_patio.localImage.childImageSharp.fluid}
@@ -124,6 +126,7 @@ const InspirationPage = () => {
 
       <AutoGallery
         title='Secondary Bathroom'
+        subtitle='Standing Shower'
         items={[
           <Img
             fluid={images.half_bath1.childImageSharp.fluid}
@@ -139,6 +142,7 @@ const InspirationPage = () => {
       <Spotlight
         imageFirst={true}
         title='Master Bedroom'
+        subtitle='Cathedral Ceilings · Ceiling Fan · Ensuite Bathroom'
         content={
           <Img
             fluid={
