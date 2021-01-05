@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import Spotlight from '../components/spotlight';
 import { Gallery } from '../components/gallery';
 import { GalleryGrid2, GalleryGrid3Tall } from '../components/grid';
+import { Heading1, Heading4 } from '../components/text';
 
 // markup
 const IndexPage = () => {
@@ -95,13 +96,9 @@ const IndexPage = () => {
     <Layout>
       <div className='h-screen w-screen bg-green-500 flex flex-col justify-end relative'>
         <div className='z-10 px-8 bg-gradient-to-r from-gray-700 to-transparent font-sans'>
-          <h1 className='text-white font-light text-4xl font-sans'>
-            Ackerman House · Beacon NY
-          </h1>
-          <p className='text-gray-400 font-light'>Built in 1930</p>
-          <p className='text-gray-400 font-light'>
-            Construction: Brick Foundation · Wood Frame
-          </p>
+          <Heading1 light>Ackerman House · Beacon NY</Heading1>
+          <Heading4 light>Built in 1930</Heading4>
+          <Heading4 light>Construction: Brick Foundation · Wood Frame</Heading4>
         </div>
         <div className='bg-yellow-500 absolute w-full h-full z-0'>
           <Img
@@ -219,10 +216,16 @@ const IndexPage = () => {
         }
       />
 
-      <Img
-        fluid={images.street.childImageSharp.fluid}
-        alt='Street'
-        style={{ height: '100%' }}
+      <Gallery
+        title='Neighborhood'
+        subtitle='Residential street walking distance to Main St'
+        body={
+          <Img
+            fluid={images.street.childImageSharp.fluid}
+            alt='Street'
+            style={{ height: '100%' }}
+          />
+        }
       />
     </Layout>
   );
