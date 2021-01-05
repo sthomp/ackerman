@@ -7,12 +7,12 @@ export function NavHeader() {
     <nav>
       <ul className='flex flex-row justify-end space-x-8 text-white'>
         <li>
-          <Link to='/' style={linkStyle} class={'text-gray-900'}>
+          <Link to='/' style={linkStyle} className={'text-gray-900'}>
             House
           </Link>
         </li>
         <li>
-          <Link to='/inspiration' style={linkStyle} class={'text-gray-900'}>
+          <Link to='/inspiration' style={linkStyle} className={'text-gray-900'}>
             Inspiration
           </Link>
         </li>

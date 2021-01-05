@@ -3,8 +3,7 @@ import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Spotlight from '../components/spotlight';
-import { Gallery } from '../components/gallery';
-import { GalleryGrid2, GalleryGrid3Wide } from '../components/grid';
+import { AutoGallery } from '../components/gallery';
 
 // markup
 const IndexPage = () => {
@@ -132,10 +131,10 @@ const IndexPage = () => {
         }
       />
 
-      <Gallery
+      <AutoGallery
         title='Post Demolition'
         subtitle='Guided video tour'
-        body={
+        items={[
           <div class='container mx-auto p-4 flex justify-center'>
             <iframe
               width='560'
@@ -148,55 +147,47 @@ const IndexPage = () => {
               mozallowfullscreen='true'
               allowFullScreen
             />
-          </div>
-        }
+          </div>,
+        ]}
       />
 
-      <Gallery
+      <AutoGallery
         title='Basement'
         subtitle='New support beams. Brick repair.'
-        body={
-          <GalleryGrid3Wide
-            items={[
-              <Img
-                fluid={images.basement1.childImageSharp.fluid}
-                alt='Basement1'
-                style={{ height: '100%' }}
-              />,
-              <Img
-                fluid={images.basement3.childImageSharp.fluid}
-                alt='Basement3'
-                style={{ height: '100%' }}
-              />,
-              <Img
-                fluid={images.basement2.childImageSharp.fluid}
-                alt='Basement2'
-                style={{ height: '100%' }}
-              />,
-            ]}
-          />
-        }
+        items={[
+          <Img
+            fluid={images.basement1.childImageSharp.fluid}
+            alt='Basement1'
+            style={{ height: '100%' }}
+          />,
+          <Img
+            fluid={images.basement3.childImageSharp.fluid}
+            alt='Basement3'
+            style={{ height: '100%' }}
+          />,
+          <Img
+            fluid={images.basement2.childImageSharp.fluid}
+            alt='Basement2'
+            style={{ height: '100%' }}
+          />,
+        ]}
       />
 
-      <Gallery
+      <AutoGallery
         title='Yard'
         subtitle='Space for office studio, patio with BBQ, plantar boxes, etc'
-        body={
-          <GalleryGrid2
-            items={[
-              <Img
-                fluid={images.garage.childImageSharp.fluid}
-                alt='Garage'
-                style={{ height: '100%' }}
-              />,
-              <Img
-                fluid={images.rear.childImageSharp.fluid}
-                alt='Rear'
-                style={{ height: '100%' }}
-              />,
-            ]}
-          />
-        }
+        items={[
+          <Img
+            fluid={images.garage.childImageSharp.fluid}
+            alt='Garage'
+            style={{ height: '100%' }}
+          />,
+          <Img
+            fluid={images.rear.childImageSharp.fluid}
+            alt='Rear'
+            style={{ height: '100%' }}
+          />,
+        ]}
       />
 
       <Spotlight
@@ -212,7 +203,7 @@ const IndexPage = () => {
         }
       />
 
-      <Gallery
+      <AutoGallery
         title='Neighborhood'
         subtitle='Residential street walking distance to Main St'
         body={

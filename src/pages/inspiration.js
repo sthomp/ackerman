@@ -77,6 +77,26 @@ const InspirationPage = () => {
           }
         }
       }
+
+      _26_green_st: remoteImagesYaml(id: { eq: "26_green_st" }) {
+        localImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+
+      _15_lawton_ave: remoteImagesYaml(id: { eq: "15_lawton_ave" }) {
+        localImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
     }
   `);
   return (
@@ -107,11 +127,26 @@ const InspirationPage = () => {
             fluid={images._38_saint_lukes.localImage.childImageSharp.fluid}
             alt='38 Saint Lukes'
           />,
+          <Img
+            fluid={images._26_green_st.localImage.childImageSharp.fluid}
+            alt='26 Green St'
+          />,
+        ]}
+      />
+
+      <AutoGallery
+        title='Staircase'
+        subtitle='Wide panel · Distance from doorway'
+        items={[
+          <Img
+            fluid={images._15_lawton_ave.localImage.childImageSharp.fluid}
+            alt='6 Spring Interior'
+          />,
         ]}
       />
 
       <Spotlight
-        imageFirst={false}
+        imageFirst={true}
         title='Outdoor Space'
         subtitle='Low Upkeep · No Grass · Space to relax and BBQ'
         content={

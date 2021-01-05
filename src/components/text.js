@@ -12,26 +12,26 @@ const colorDark = {
 
 export const linkStyle = {
   color: colorDark.primary,
-  'font-family': 'Helvetica, Arial',
-  'font-weight': '400',
-  'font-style': 'normal',
-  'font-size': '13px',
-  'letter-spacing': '0.06em',
-  'line-height': '1.8em',
-  'text-decoration': 'none',
+  fontFamily: 'Helvetica, Arial',
+  fontWeight: '400',
+  fontStyle: 'normal',
+  fontSize: '13px',
+  letterSpacing: '0.06em',
+  lineHeight: '1.8em',
+  textDecoration: 'none',
 };
 
 export function Heading1({ light, children }) {
   const defaultStyle = {
     color: light ? colorLight.primary : colorDark.primary,
-    'font-family': 'Helvetica, Arial',
-    'font-weight': '100',
-    'font-style': 'normal',
-    'font-size': '1.6em',
-    'letter-spacing': '0.06em',
-    'line-height': '1.2em',
-    'text-transform': 'uppercase',
-    'text-decoration': 'none',
+    fontFamily: 'Helvetica, Arial',
+    fontWeight: '100',
+    fontStyle: 'normal',
+    fontSize: '1.6em',
+    letterSpacing: '0.06em',
+    lineHeight: '1.2em',
+    textTransform: 'uppercase',
+    textDecoration: 'none',
   };
   return <h1 style={defaultStyle}>{children}</h1>;
 }
@@ -39,14 +39,14 @@ export function Heading1({ light, children }) {
 export function Heading3({ light, children }) {
   const defaultStyle = {
     color: light ? colorLight.primary : colorDark.primary,
-    'font-family': 'Helvetica, Arial',
-    'font-weight': '100',
-    'font-style': 'normal',
-    'font-size': '1.6em',
-    'letter-spacing': '0.06em',
-    'line-height': '1.2em',
-    'text-transform': 'uppercase',
-    'text-decoration': 'none',
+    fontFamily: 'Helvetica, Arial',
+    fontWeight: '100',
+    fontStyle: 'normal',
+    fontSize: '1.6em',
+    letterSpacing: '0.06em',
+    lineHeight: '1.2em',
+    textTransform: 'uppercase',
+    textDecoration: 'none',
   };
   return <h3 style={defaultStyle}>{children}</h3>;
 }
@@ -54,13 +54,13 @@ export function Heading3({ light, children }) {
 export function Heading4({ light, children }) {
   const defaultStyle = {
     color: light ? colorLight.secondary : colorDark.secondary,
-    'font-family': 'Arial',
-    'font-weight': '400',
-    'font-style': 'normal',
-    'font-size': '13px',
-    'letter-spacing': '0.06em',
-    'line-height': '1.8em',
-    'text-decoration': 'none',
+    fontFamily: 'Helvetica, Arial',
+    fontWeight: '400',
+    fontStyle: 'normal',
+    fontSize: '13px',
+    letterSpacing: '0.06em',
+    lineHeight: '1.8em',
+    textDecoration: 'none',
   };
   return <h4 style={defaultStyle}>{children}</h4>;
 }

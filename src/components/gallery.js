@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { GalleryGrid1, GalleryGrid2, GalleryGrid3Tall } from './grid';
+import { GalleryGrid2, GalleryGrid3, GalleryGridMany } from './grid';
 import { Heading3, Heading4 } from './text';
 
 function Header({ title, subtitle, rightAccessory }) {
@@ -20,13 +20,13 @@ export function AutoGallery({ title, subtitle, items, rightAccessory }) {
       return <p>empty!</p>;
     }
     if (items.length === 1) {
-      return <GalleryGrid1 items={items} />;
+      return items[0];
     } else if (items.length === 2) {
       return <GalleryGrid2 items={items} />;
     } else if (items.length === 3) {
-      return <GalleryGrid3Tall items={items} />;
+      return <GalleryGrid3 items={items} />;
     } else {
-      return <p>too many</p>;
+      return <GalleryGridMany items={items} />;
     }
   })();
   return (

@@ -1,14 +1,31 @@
 - id: 27_ackerman_exterior
   url: https://photos.zillowstatic.com/fp/d62f08ff14c044b04427611f0ba8f62e-uncropped_scaled_within_1536_1152.webp
+  source: https://www.zillow.com/homedetails/27-Ackerman-St-Beacon-NY-12508/30080194_zpid
 
 - id: 6_spring_interior
   url: https://a0.muscache.com/im/pictures/bdd5a902-aff5-49a1-8d3d-d0d5f32dec92.jpg?im_w=1440
+  source: TODO
 
 - id: 6_spring_patio
   url: https://a0.muscache.com/im/pictures/856f614d-b9ba-4d1c-9e4b-622e936aa7e0.jpg?im_w=1440
+  source: TODO
 
 - id: 38_saint_lukes
   url: https://photos.zillowstatic.com/fp/4d50727801b31b3af73bb9a38a4089ee-uncropped_scaled_within_1536_1152.webp
+  source: TODO
 
 - id: 23_n_cedar_master_bed
   url: https://photos.zillowstatic.com/fp/9d9aef341ee4c92543da92d7c3e6c986-uncropped_scaled_within_1536_1152.webp
+  source:
+
+- id: 38_saint_lukes
+  url: https://photos.zillowstatic.com/fp/4d50727801b31b3af73bb9a38a4089ee-uncropped_scaled_within_1536_1152.webp
+  source: https://www.zillow.com/homedetails/38-Saint-Lukes-Pl-Beacon-NY-12508/30080438_zpid/?
+
+- id: 26_green_st
+  url: https://photos.zillowstatic.com/fp/75d611a1bdc71ce91a37e22b19d33967-uncropped_scaled_within_1536_1152.webp
+  source: https://www.zillow.com/homedetails/26-Green-St-Beacon-NY-12508/30080845_zpid/?
+
+- id: 15_lawton_ave
+  url: https://photos.zillowstatic.com/fp/abe08bb313193923dacc74e58a35ab5f-uncropped_scaled_within_1536_1152.webp
+  source: https://www.zillow.com/homedetails/15-Lawton-Ave-Hartsdale-NY-10530/33032861_zpid/?
