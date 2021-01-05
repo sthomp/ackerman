@@ -4,8 +4,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Spotlight from '../components/spotlight';
 import { AutoGallery } from '../components/gallery';
-import { GalleryGrid2, GalleryGrid3Tall } from '../components/grid';
-import { Heading1, Heading4 } from '../components/text';
 
 const InspirationPage = () => {
   const images = useStaticQuery(graphql`
@@ -83,7 +81,20 @@ const InspirationPage = () => {
   `);
   return (
     <Layout>
-      <div className='py-8' />
+      <Spotlight
+        imageFirst={true}
+        title='Entry Way'
+        subtitle='Small Outdoor Porch · Living Room Extension'
+        content={
+          <Img
+            fluid={
+              images._27_ackerman_exterior.localImage.childImageSharp.fluid
+            }
+            alt='27 Ackerman'
+          />
+        }
+      />
+
       <AutoGallery
         title='Living Room'
         subtitle='Exposed Brick Column · Exposed Beam · Wide Plank Flooring'
@@ -99,19 +110,6 @@ const InspirationPage = () => {
         ]}
       />
 
-      <Spotlight
-        imageFirst={true}
-        title='Entry Way'
-        subtitle='Small Outdoor Porch · Living Room Extension'
-        content={
-          <Img
-            fluid={
-              images._27_ackerman_exterior.localImage.childImageSharp.fluid
-            }
-            alt='27 Ackerman'
-          />
-        }
-      />
       <Spotlight
         imageFirst={false}
         title='Outdoor Space'

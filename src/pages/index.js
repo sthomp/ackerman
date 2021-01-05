@@ -4,12 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Spotlight from '../components/spotlight';
 import { Gallery } from '../components/gallery';
-import {
-  GalleryGrid2,
-  GalleryGrid3Tall,
-  GalleryGrid3Wide,
-} from '../components/grid';
-import { Heading1, Heading4 } from '../components/text';
+import { GalleryGrid2, GalleryGrid3Wide } from '../components/grid';
 
 // markup
 const IndexPage = () => {
@@ -98,11 +93,11 @@ const IndexPage = () => {
   `);
   return (
     <Layout>
-      <div className='py-8' />
-      <Gallery
-        title='Ackerman House · Beacon NY'
+      <Spotlight
+        imageFirst={true}
+        title='Structure'
         subtitle='Built in 1930 · Wood Frame · Brick Foundation'
-        body={
+        content={
           <Img
             fluid={images.front.childImageSharp.fluid}
             alt='Front'
@@ -112,22 +107,9 @@ const IndexPage = () => {
       />
 
       <Spotlight
-        imageFirst={true}
-        title='Land Survey'
-        subtitle='Taken Dec, 2020'
-        content={
-          <Img
-            fluid={images.survey.childImageSharp.fluid}
-            alt='Land Survey'
-            style={{ height: '100%' }}
-          />
-        }
-      />
-
-      <Spotlight
         imageFirst={false}
         title='Ground Floor'
-        subtitle='Two new LVL beams recently installed. One beam has been left exposed.'
+        subtitle='Two new LVL beams installed. One beam has been left exposed.'
         content={
           <Img
             fluid={images.beam.childImageSharp.fluid}
@@ -140,7 +122,7 @@ const IndexPage = () => {
       <Spotlight
         imageFirst={true}
         title='Top Floor'
-        subtitle='Recently cleared'
+        subtitle='Currently four bedrooms and one bathroom with attic staircase. Desired layout is three bedroom two bathroom. Attic space is not necessary and could be opened to cathedral ceilings.'
         content={
           <Img
             fluid={images.top_floor.childImageSharp.fluid}
@@ -151,9 +133,8 @@ const IndexPage = () => {
       />
 
       <Gallery
-        imageFirst={true}
         title='Post Demolition'
-        subtitle=''
+        subtitle='Guided video tour'
         body={
           <div class='container mx-auto p-4 flex justify-center'>
             <iframe
@@ -178,13 +159,13 @@ const IndexPage = () => {
           <GalleryGrid3Wide
             items={[
               <Img
-                fluid={images.basement3.childImageSharp.fluid}
-                alt='Basement3'
+                fluid={images.basement1.childImageSharp.fluid}
+                alt='Basement1'
                 style={{ height: '100%' }}
               />,
               <Img
-                fluid={images.basement1.childImageSharp.fluid}
-                alt='Basement1'
+                fluid={images.basement3.childImageSharp.fluid}
+                alt='Basement3'
                 style={{ height: '100%' }}
               />,
               <Img
@@ -214,6 +195,19 @@ const IndexPage = () => {
                 style={{ height: '100%' }}
               />,
             ]}
+          />
+        }
+      />
+
+      <Spotlight
+        imageFirst={false}
+        title='Land Survey'
+        subtitle='As of Dec, 2020'
+        content={
+          <Img
+            fluid={images.survey.childImageSharp.fluid}
+            alt='Land Survey'
+            style={{ height: '100%' }}
           />
         }
       />

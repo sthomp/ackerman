@@ -6,13 +6,13 @@ const colorLight = {
 };
 
 const colorDark = {
-  primary: '#222',
+  primary: 'rgba(17, 24, 39, var(--tw-text-opacity))',
   secondary: '#575757',
 };
 
 export const linkStyle = {
-  color: colorLight.primary,
-  'font-family': 'Arial',
+  color: colorDark.primary,
+  'font-family': 'Helvetica, Arial',
   'font-weight': '400',
   'font-style': 'normal',
   'font-size': '13px',
