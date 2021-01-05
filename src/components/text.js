@@ -10,6 +10,17 @@ const colorDark = {
   secondary: '#575757',
 };
 
+export const linkStyle = {
+  color: colorLight.primary,
+  'font-family': 'Arial',
+  'font-weight': '400',
+  'font-style': 'normal',
+  'font-size': '13px',
+  'letter-spacing': '0.06em',
+  'line-height': '1.8em',
+  'text-decoration': 'none',
+};
+
 export function Heading1({ light, children }) {
   const defaultStyle = {
     color: light ? colorLight.primary : colorDark.primary,

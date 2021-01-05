@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { linkStyle } from './text';
 
 export default function Layout({ children }) {
   return (
@@ -8,10 +9,14 @@ export default function Layout({ children }) {
       <nav className='fixed left-0 top-0 w-full z-50 bg-gray-700 bg-opacity-95 py-2 px-8 shadow-lg'>
         <ul className='flex flex-row justify-end space-x-4 text-white'>
           <li>
-            <Link to='/'>House</Link>
+            <Link to='/' style={linkStyle}>
+              House
+            </Link>
           </li>
           <li>
-            <Link to='/inspiration'>Inspiration</Link>
+            <Link to='/inspiration' style={linkStyle}>
+              Inspiration
+            </Link>
           </li>
         </ul>
       </nav>
