@@ -120,10 +120,10 @@ const InspirationPage = () => {
 
       <AutoGallery
         title='Master Bedroom'
-        subtitle='Cathedral Ceilings · Ceiling Fan · Ensuite Bathroom'
+        subtitle='Cathedral Ceilings · Ceiling Fan · Ensuite Bathroom · Wide plank flooring'
         items={[
           <GalleryImage data={images._23_n_cedar_master_bed} />,
-          <GalleryImage data={images._175_hartsdale_1} />,
+          <GalleryImage data={images._175_hartsdale_2} />,
         ]}
       />
     </Layout>
