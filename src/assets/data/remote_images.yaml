@@ -58,6 +58,11 @@
   source: https://www.zillow.com/homedetails/402-Washington-St-Hudson-NY-12534/215386593_zpid/?
   desc: 402 Washington - Yard
 
+- id: 17_north
+  url: https://photos.zillowstatic.com/fp/d2d50cf9dda093bc9e84e85aee692b13-uncropped_scaled_within_1536_1152.webp
+  source: https://www.zillow.com/homedetails/17-North-St-Beacon-NY-12508/30080180_zpid/?
+  desc: 17 North St - Staircase
+
 - id: moxy_bathroom_1
   image: ../images/inspiration_half_bath1.jpg
   desc: Half Bathroom - Moxy Hotel

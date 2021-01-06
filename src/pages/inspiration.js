@@ -66,6 +66,10 @@ const InspirationPage = () => {
       _402_washington_2: remoteImagesYaml(id: { eq: "402_washington_2" }) {
         ...RemoteImageFields
       }
+
+      _17_north: remoteImagesYaml(id: { eq: "17_north" }) {
+        ...RemoteImageFields
+      }
     }
   `);
   return (
@@ -96,6 +100,7 @@ const InspirationPage = () => {
           <GalleryImage data={images._15_lawton_ave} />,
           <GalleryImage data={images._15_lawton_ave_2} />,
           <GalleryImage data={images._175_hartsdale_1} />,
+          <GalleryImage data={images._17_north} />,
         ]}
       />
 
