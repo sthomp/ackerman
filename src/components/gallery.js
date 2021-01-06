@@ -19,7 +19,11 @@ export function AutoGallery({ title, subtitle, items, headerAlign }) {
     if (headerAlign === 'left' || headerAlign === 'right') {
       return (
         <div>
-          {items.map((item, i) => React.cloneElement(item, { key: i }))}
+          {items.map((item, i) => (
+            <div key={i} className={`${i < items.length - 1 ? 'mb-1' : ''}`}>
+              {item}
+            </div>
+          ))}
         </div>
       );
     }
@@ -58,14 +62,14 @@ export function Gallery({ title, subtitle, body, headerAlign }) {
       return (
         <div className={`md:flex flex-row border-b`}>
           <Header title={title} subtitle={subtitle} />
-          <div className='bg-gray-200 md:w-4/5'>{body}</div>
+          <div className='md:w-4/5'>{body}</div>
         </div>
       );
     case 'right':
       return (
         <div className={`md:flex flex-row-reverse border-b`}>
           <Header title={title} subtitle={subtitle} />
-          <div className='bg-gray-200 md:w-4/5'>{body}</div>
+          <div className='md:w-4/5'>{body}</div>
         </div>
       );
     default:
