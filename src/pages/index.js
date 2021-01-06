@@ -94,7 +94,7 @@ const IndexPage = () => {
 
       <AutoGallery
         title='Basement'
-        headerAlign='left'
+        headerAlign='top'
         subtitle='New support beams. Brick repair.'
         items={[
           <GalleryImage data={images.basement1} />,
