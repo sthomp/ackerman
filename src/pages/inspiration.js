@@ -4,6 +4,22 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Spotlight from '../components/spotlight';
 import { AutoGallery } from '../components/gallery';
+import GalleryImage from '../components/GalleryImage';
+
+export const myFragment = graphql`
+  fragment RemoteImageFields on RemoteImagesYaml {
+    id
+    url
+    desc
+    localImage {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
 
 const InspirationPage = () => {
   const images = useStaticQuery(graphql`
@@ -11,55 +27,25 @@ const InspirationPage = () => {
       _27_ackerman_exterior: remoteImagesYaml(
         id: { eq: "27_ackerman_exterior" }
       ) {
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...RemoteImageFields
       }
 
       _6_spring_interior: remoteImagesYaml(id: { eq: "6_spring_interior" }) {
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...RemoteImageFields
       }
 
       _6_spring_patio: remoteImagesYaml(id: { eq: "6_spring_patio" }) {
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...RemoteImageFields
       }
 
       _38_saint_lukes: remoteImagesYaml(id: { eq: "38_saint_lukes" }) {
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...RemoteImageFields
       }
 
       _23_n_cedar_master_bed: remoteImagesYaml(
         id: { eq: "23_n_cedar_master_bed" }
       ) {
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...RemoteImageFields
       }
 
       half_bath1: file(relativePath: { eq: "inspiration_half_bath1.jpg" }) {
@@ -79,73 +65,31 @@ const InspirationPage = () => {
       }
 
       _26_green_st: remoteImagesYaml(id: { eq: "26_green_st" }) {
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...RemoteImageFields
       }
 
       _15_lawton_ave: remoteImagesYaml(id: { eq: "15_lawton_ave" }) {
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...RemoteImageFields
       }
 
       _15_lawton_ave_2: remoteImagesYaml(id: { eq: "15_lawton_ave_2" }) {
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...RemoteImageFields
       }
 
       _175_hartsdale_1: remoteImagesYaml(id: { eq: "175_hartsdale_1" }) {
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...RemoteImageFields
       }
 
       _175_hartsdale_2: remoteImagesYaml(id: { eq: "175_hartsdale_2" }) {
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...RemoteImageFields
       }
 
       _402_washington_1: remoteImagesYaml(id: { eq: "402_washington_1" }) {
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...RemoteImageFields
       }
 
       _402_washington_2: remoteImagesYaml(id: { eq: "402_washington_2" }) {
-        localImage {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...RemoteImageFields
       }
     }
   `);
@@ -155,32 +99,16 @@ const InspirationPage = () => {
         imageFirst={true}
         title='Entry Way'
         subtitle='Small Outdoor Porch · Living Room Extension'
-        content={
-          <Img
-            fluid={
-              images._27_ackerman_exterior.localImage.childImageSharp.fluid
-            }
-            alt='27 Ackerman'
-          />
-        }
+        content={<GalleryImage data={images._27_ackerman_exterior} />}
       />
 
       <AutoGallery
         title='Living Room'
         subtitle='Exposed Brick Column · Exposed Beam · Wide Plank Flooring'
         items={[
-          <Img
-            fluid={images._6_spring_interior.localImage.childImageSharp.fluid}
-            alt='6 Spring Interior'
-          />,
-          <Img
-            fluid={images._38_saint_lukes.localImage.childImageSharp.fluid}
-            alt='38 Saint Lukes'
-          />,
-          <Img
-            fluid={images._26_green_st.localImage.childImageSharp.fluid}
-            alt='26 Green St'
-          />,
+          <GalleryImage data={images._6_spring_interior} />,
+          <GalleryImage data={images._38_saint_lukes} />,
+          <GalleryImage data={images._26_green_st} />,
         ]}
       />
 
@@ -188,18 +116,9 @@ const InspirationPage = () => {
         title='Staircase'
         subtitle='Wide panel · Doorway Clearance · Landing Space'
         items={[
-          <Img
-            fluid={images._15_lawton_ave.localImage.childImageSharp.fluid}
-            alt='15 Lawton Staircase'
-          />,
-          <Img
-            fluid={images._15_lawton_ave_2.localImage.childImageSharp.fluid}
-            alt='15 Lawton Staircase'
-          />,
-          <Img
-            fluid={images._175_hartsdale_1.localImage.childImageSharp.fluid}
-            alt='175 Hartsdale Staircase'
-          />,
+          <GalleryImage data={images._15_lawton_ave} />,
+          <GalleryImage data={images._15_lawton_ave_2} />,
+          <GalleryImage data={images._175_hartsdale_1} />,
         ]}
       />
 
@@ -207,18 +126,9 @@ const InspirationPage = () => {
         title='Outdoor Space'
         subtitle='Low Upkeep · No Grass · Space to relax and BBQ'
         items={[
-          <Img
-            fluid={images._6_spring_patio.localImage.childImageSharp.fluid}
-            alt='6 Spring Patio'
-          />,
-          <Img
-            fluid={images._402_washington_1.localImage.childImageSharp.fluid}
-            alt='402 Washington'
-          />,
-          <Img
-            fluid={images._402_washington_2.localImage.childImageSharp.fluid}
-            alt='402 Washington'
-          />,
+          <GalleryImage data={images._6_spring_patio} />,
+          <GalleryImage data={images._402_washington_1} />,
+          <GalleryImage data={images._402_washington_2} />,
         ]}
       />
 
@@ -241,16 +151,8 @@ const InspirationPage = () => {
         title='Master Bedroom'
         subtitle='Cathedral Ceilings · Ceiling Fan · Ensuite Bathroom'
         items={[
-          <Img
-            fluid={
-              images._23_n_cedar_master_bed.localImage.childImageSharp.fluid
-            }
-            alt='_23_n_cedar_master_bed'
-          />,
-          <Img
-            fluid={images._175_hartsdale_1.localImage.childImageSharp.fluid}
-            alt='175 Hartsdale Staircase'
-          />,
+          <GalleryImage data={images._23_n_cedar_master_bed} />,
+          <GalleryImage data={images._175_hartsdale_1} />,
         ]}
       />
     </Layout>
