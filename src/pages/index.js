@@ -4,89 +4,50 @@ import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Spotlight from '../components/spotlight';
 import { AutoGallery } from '../components/gallery';
+import GalleryImage from '../components/GalleryImage';
 
 // markup
 const IndexPage = () => {
   const images = useStaticQuery(graphql`
     query SomeQuery {
-      survey: file(relativePath: { eq: "ackerman_survey.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      survey: remoteImagesYaml(id: { eq: "survey" }) {
+        ...RemoteImageFields
       }
 
-      beam: file(relativePath: { eq: "ackerman_beam.jpeg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      beam: remoteImagesYaml(id: { eq: "beam" }) {
+        ...RemoteImageFields
       }
 
-      garage: file(relativePath: { eq: "garage.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      garage: remoteImagesYaml(id: { eq: "garage" }) {
+        ...RemoteImageFields
       }
 
-      basement1: file(relativePath: { eq: "house_basement1.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      basement1: remoteImagesYaml(id: { eq: "basement1" }) {
+        ...RemoteImageFields
       }
 
-      basement2: file(relativePath: { eq: "house_basement2.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      basement2: remoteImagesYaml(id: { eq: "basement2" }) {
+        ...RemoteImageFields
       }
 
-      basement3: file(relativePath: { eq: "basement3.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      basement3: remoteImagesYaml(id: { eq: "basement3" }) {
+        ...RemoteImageFields
       }
 
-      front: file(relativePath: { eq: "house_front.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      front: remoteImagesYaml(id: { eq: "house_front" }) {
+        ...RemoteImageFields
       }
 
-      rear: file(relativePath: { eq: "house_rear.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      rear: remoteImagesYaml(id: { eq: "house_rear" }) {
+        ...RemoteImageFields
       }
 
-      street: file(relativePath: { eq: "house_street.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      street: remoteImagesYaml(id: { eq: "house_street" }) {
+        ...RemoteImageFields
       }
 
-      top_floor: file(relativePath: { eq: "top_floor.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      top_floor: remoteImagesYaml(id: { eq: "top_floor" }) {
+        ...RemoteImageFields
       }
     }
   `);
@@ -96,39 +57,21 @@ const IndexPage = () => {
         imageFirst={true}
         title='Structure'
         subtitle='Built in 1930 · Wood Frame · Brick Foundation'
-        content={
-          <Img
-            fluid={images.front.childImageSharp.fluid}
-            alt='Front'
-            style={{ height: '100%' }}
-          />
-        }
+        content={<GalleryImage data={images.front} />}
       />
 
       <Spotlight
         imageFirst={false}
         title='Ground Floor'
         subtitle='Two new LVL beams installed. One beam has been left exposed.'
-        content={
-          <Img
-            fluid={images.beam.childImageSharp.fluid}
-            alt='New Beam'
-            style={{ height: '100%' }}
-          />
-        }
+        content={<GalleryImage data={images.beam} />}
       />
 
       <Spotlight
         imageFirst={true}
         title='Top Floor'
         subtitle='Currently four bedrooms and one bathroom with attic staircase. Desired layout is three bedroom two bathroom. Attic space is not necessary and could be opened to cathedral ceilings.'
-        content={
-          <Img
-            fluid={images.top_floor.childImageSharp.fluid}
-            alt='Top Floor'
-            style={{ height: '100%' }}
-          />
-        }
+        content={<GalleryImage data={images.top_floor} />}
       />
 
       <AutoGallery
@@ -155,21 +98,9 @@ const IndexPage = () => {
         title='Basement'
         subtitle='New support beams. Brick repair.'
         items={[
-          <Img
-            fluid={images.basement1.childImageSharp.fluid}
-            alt='Basement1'
-            style={{ height: '100%' }}
-          />,
-          <Img
-            fluid={images.basement3.childImageSharp.fluid}
-            alt='Basement3'
-            style={{ height: '100%' }}
-          />,
-          <Img
-            fluid={images.basement2.childImageSharp.fluid}
-            alt='Basement2'
-            style={{ height: '100%' }}
-          />,
+          <GalleryImage data={images.basement1} />,
+          <GalleryImage data={images.basement3} />,
+          <GalleryImage data={images.basement2} />,
         ]}
       />
 
@@ -177,16 +108,8 @@ const IndexPage = () => {
         title='Yard'
         subtitle='Space for office studio, patio with BBQ, plantar boxes, etc'
         items={[
-          <Img
-            fluid={images.garage.childImageSharp.fluid}
-            alt='Garage'
-            style={{ height: '100%' }}
-          />,
-          <Img
-            fluid={images.rear.childImageSharp.fluid}
-            alt='Rear'
-            style={{ height: '100%' }}
-          />,
+          <GalleryImage data={images.garage} />,
+          <GalleryImage data={images.rear} />,
         ]}
       />
 
@@ -194,25 +117,13 @@ const IndexPage = () => {
         imageFirst={false}
         title='Land Survey'
         subtitle='As of Dec, 2020'
-        content={
-          <Img
-            fluid={images.survey.childImageSharp.fluid}
-            alt='Land Survey'
-            style={{ height: '100%' }}
-          />
-        }
+        content={<GalleryImage data={images.survey} />}
       />
 
       <AutoGallery
         title='Neighborhood'
         subtitle='Residential street walking distance to Main St'
-        body={
-          <Img
-            fluid={images.street.childImageSharp.fluid}
-            alt='Street'
-            style={{ height: '100%' }}
-          />
-        }
+        items={[<GalleryImage data={images.street} />]}
       />
     </Layout>
   );

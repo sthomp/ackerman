@@ -5,28 +5,6 @@ import Spotlight from '../components/spotlight';
 import { AutoGallery } from '../components/gallery';
 import GalleryImage from '../components/GalleryImage';
 
-export const myFragment = graphql`
-  fragment RemoteImageFields on RemoteImagesYaml {
-    id
-    url
-    desc
-    image {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    localImage {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
-
 const InspirationPage = () => {
   const images = useStaticQuery(graphql`
     query InspirationQuery {

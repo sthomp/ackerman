@@ -65,3 +65,43 @@
 - id: moxy_bathroom_2
   image: ../images/inspiration_half_bath2.jpg
   desc: Half Bathroom - Moxy Hotel
+
+- id: survey
+  image: ../images/ackerman_survey.jpg
+  desc: Survey
+
+- id: beam
+  image: ../images/ackerman_beam.jpeg
+  desc: Exposed Beam
+
+- id: garage
+  image: ../images/garage.jpg
+  desc: Garage
+
+- id: basement1
+  image: ../images/house_basement1.jpg
+  desc: Basement
+
+- id: basement2
+  image: ../images/house_basement2.jpg
+  desc: Basement
+
+- id: basement3
+  image: ../images/basement3.jpg
+  desc: Basement
+
+- id: house_front
+  image: ../images/house_front.jpg
+  desc: Front
+
+- id: house_rear
+  image: ../images/house_rear.jpg
+  desc: Front
+
+- id: house_street
+  image: ../images/house_street.jpg
+  desc: Street View
+
+- id: top_floor
+  image: ../images/top_floor.jpg
+  desc: Top Floor
