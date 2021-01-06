@@ -97,6 +97,56 @@ const InspirationPage = () => {
           }
         }
       }
+
+      _15_lawton_ave_2: remoteImagesYaml(id: { eq: "15_lawton_ave_2" }) {
+        localImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+
+      _175_hartsdale_1: remoteImagesYaml(id: { eq: "175_hartsdale_1" }) {
+        localImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+
+      _175_hartsdale_2: remoteImagesYaml(id: { eq: "175_hartsdale_2" }) {
+        localImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+
+      _402_washington_1: remoteImagesYaml(id: { eq: "402_washington_1" }) {
+        localImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+
+      _402_washington_2: remoteImagesYaml(id: { eq: "402_washington_2" }) {
+        localImage {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
     }
   `);
   return (
@@ -136,25 +186,40 @@ const InspirationPage = () => {
 
       <AutoGallery
         title='Staircase'
-        subtitle='Wide panel · Distance from doorway'
+        subtitle='Wide panel · Doorway Clearance · Landing Space'
         items={[
           <Img
             fluid={images._15_lawton_ave.localImage.childImageSharp.fluid}
-            alt='6 Spring Interior'
+            alt='15 Lawton Staircase'
+          />,
+          <Img
+            fluid={images._15_lawton_ave_2.localImage.childImageSharp.fluid}
+            alt='15 Lawton Staircase'
+          />,
+          <Img
+            fluid={images._175_hartsdale_1.localImage.childImageSharp.fluid}
+            alt='175 Hartsdale Staircase'
           />,
         ]}
       />
 
-      <Spotlight
-        imageFirst={true}
+      <AutoGallery
         title='Outdoor Space'
         subtitle='Low Upkeep · No Grass · Space to relax and BBQ'
-        content={
+        items={[
           <Img
             fluid={images._6_spring_patio.localImage.childImageSharp.fluid}
             alt='6 Spring Patio'
-          />
-        }
+          />,
+          <Img
+            fluid={images._402_washington_1.localImage.childImageSharp.fluid}
+            alt='402 Washington'
+          />,
+          <Img
+            fluid={images._402_washington_2.localImage.childImageSharp.fluid}
+            alt='402 Washington'
+          />,
+        ]}
       />
 
       <AutoGallery
@@ -172,18 +237,21 @@ const InspirationPage = () => {
         ]}
       />
 
-      <Spotlight
-        imageFirst={true}
+      <AutoGallery
         title='Master Bedroom'
         subtitle='Cathedral Ceilings · Ceiling Fan · Ensuite Bathroom'
-        content={
+        items={[
           <Img
             fluid={
               images._23_n_cedar_master_bed.localImage.childImageSharp.fluid
             }
             alt='_23_n_cedar_master_bed'
-          />
-        }
+          />,
+          <Img
+            fluid={images._175_hartsdale_1.localImage.childImageSharp.fluid}
+            alt='175 Hartsdale Staircase'
+          />,
+        ]}
       />
     </Layout>
   );
