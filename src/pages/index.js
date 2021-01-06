@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
-import Spotlight from '../components/spotlight';
 import { AutoGallery } from '../components/gallery';
 import GalleryImage from '../components/GalleryImage';
 
@@ -52,25 +51,25 @@ const IndexPage = () => {
   `);
   return (
     <Layout>
-      <Spotlight
-        imageFirst={true}
+      <AutoGallery
+        headerAlign='right'
         title='Structure'
         subtitle='Built in 1930 · Wood Frame · Brick Foundation'
-        content={<GalleryImage data={images.front} />}
+        items={[<GalleryImage data={images.front} />]}
       />
 
-      <Spotlight
-        imageFirst={false}
+      <AutoGallery
+        headerAlign='left'
         title='Ground Floor'
         subtitle='Two new LVL beams installed. One beam has been left exposed.'
-        content={<GalleryImage data={images.beam} />}
+        items={[<GalleryImage data={images.beam} />]}
       />
 
-      <Spotlight
-        imageFirst={true}
+      <AutoGallery
+        headerAlign='right'
         title='Top Floor'
         subtitle='Currently four bedrooms and one bathroom with attic staircase. Desired layout is three bedroom two bathroom. Attic space is not necessary and could be opened to cathedral ceilings.'
-        content={<GalleryImage data={images.top_floor} />}
+        items={[<GalleryImage data={images.top_floor} />]}
       />
 
       <AutoGallery
@@ -112,11 +111,11 @@ const IndexPage = () => {
         ]}
       />
 
-      <Spotlight
-        imageFirst={false}
+      <AutoGallery
+        headerAlign='left'
         title='Land Survey'
         subtitle='As of Dec, 2020'
-        content={<GalleryImage data={images.survey} />}
+        items={[<GalleryImage data={images.survey} />]}
       />
 
       <AutoGallery

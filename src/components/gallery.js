@@ -4,18 +4,26 @@ import { Heading3, Heading4 } from './text';
 
 function Header({ title, subtitle }) {
   return (
-    <div className='container mx-auto p-4'>
+    <div className='p-4 md:p-12'>
       {title && <Heading3>{title}</Heading3>}
       {subtitle && <Heading4>{subtitle}</Heading4>}
     </div>
   );
 }
 
-export function AutoGallery({ title, subtitle, items }) {
+export function AutoGallery({ title, subtitle, items, headerAlign }) {
   const body = (() => {
     if (!items) {
-      return <p>empty!</p>;
+      return undefined;
     }
+    if (headerAlign === 'left' || headerAlign === 'right') {
+      return (
+        <div>
+          {items.map((item, i) => React.cloneElement(item, { key: i }))}
+        </div>
+      );
+    }
+
     if (items.length === 1) {
       return items[0];
     } else if (items.length === 2) {
@@ -26,14 +34,41 @@ export function AutoGallery({ title, subtitle, items }) {
       return <GalleryGridMany items={items} />;
     }
   })();
-  return <Gallery title={title} subtitle={subtitle} body={body} />;
+  return (
+    <Gallery
+      title={title}
+      subtitle={subtitle}
+      body={body}
+      headerAlign={headerAlign}
+    />
+  );
 }
 
-export function Gallery({ title, subtitle, body }) {
-  return (
-    <div className='border-b'>
-      <Header title={title} subtitle={subtitle} />
-      {body}
-    </div>
-  );
+export function Gallery({ title, subtitle, body, headerAlign }) {
+  headerAlign = headerAlign || 'top';
+  switch (headerAlign) {
+    case 'top':
+      return (
+        <div className='border-b'>
+          <Header title={title} subtitle={subtitle} />
+          {body}
+        </div>
+      );
+    case 'left':
+      return (
+        <div className={`md:flex flex-row border-b`}>
+          <Header title={title} subtitle={subtitle} />
+          <div className='bg-gray-200 md:w-4/5'>{body}</div>
+        </div>
+      );
+    case 'right':
+      return (
+        <div className={`md:flex flex-row-reverse border-b`}>
+          <Header title={title} subtitle={subtitle} />
+          <div className='bg-gray-200 md:w-4/5'>{body}</div>
+        </div>
+      );
+    default:
+      return undefined;
+  }
 }

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
-import Spotlight from '../components/spotlight';
 import { AutoGallery } from '../components/gallery';
 import GalleryImage from '../components/GalleryImage';
 
@@ -71,14 +70,15 @@ const InspirationPage = () => {
   `);
   return (
     <Layout>
-      <Spotlight
-        imageFirst={true}
+      <AutoGallery
+        headerAlign='right'
         title='Entry Way'
         subtitle='Small Outdoor Porch · Living Room Extension'
-        content={<GalleryImage data={images._27_ackerman_exterior} />}
+        items={[<GalleryImage data={images._27_ackerman_exterior} />]}
       />
 
       <AutoGallery
+        headerAlign='top'
         title='Living Room'
         subtitle='Exposed Brick Column · Exposed Beam · Wide Plank Flooring'
         items={[
@@ -89,6 +89,7 @@ const InspirationPage = () => {
       />
 
       <AutoGallery
+        headerAlign='right'
         title='Staircase'
         subtitle='Wide panel · Doorway Clearance · Landing Space'
         items={[
@@ -99,6 +100,7 @@ const InspirationPage = () => {
       />
 
       <AutoGallery
+        headerAlign='left'
         title='Outdoor Space'
         subtitle='Low Upkeep · No Grass · Space to relax and BBQ'
         items={[
