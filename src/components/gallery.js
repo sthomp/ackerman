@@ -50,29 +50,20 @@ export function AutoGallery({ title, subtitle, items, headerAlign }) {
 
 export function Gallery({ title, subtitle, body, headerAlign }) {
   headerAlign = headerAlign || 'top';
-  switch (headerAlign) {
-    case 'top':
-      return (
-        <div className='border-b'>
-          <Header title={title} subtitle={subtitle} />
-          {body}
-        </div>
-      );
-    case 'left':
-      return (
-        <div className={`md:flex flex-row border-b`}>
-          <Header title={title} subtitle={subtitle} />
-          <div className='md:w-4/5'>{body}</div>
-        </div>
-      );
-    case 'right':
-      return (
-        <div className={`md:flex flex-row-reverse border-b`}>
-          <Header title={title} subtitle={subtitle} />
-          <div className='md:w-4/5'>{body}</div>
-        </div>
-      );
-    default:
-      return undefined;
+  if (headerAlign === 'top') {
+    return (
+      <div className='border-b'>
+        <Header title={title} subtitle={subtitle} />
+        {body}
+      </div>
+    );
+  } else {
+    const flexRow = headerAlign === 'left' ? 'flex-row' : 'flex-row-reverse';
+    return (
+      <div className={`md:flex ${flexRow} border-b`}>
+        <Header title={title} subtitle={subtitle} />
+        <div className='md:w-4/5'>{body}</div>
+      </div>
+    );
   }
 }
