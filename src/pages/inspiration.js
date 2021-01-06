@@ -69,7 +69,6 @@ const InspirationPage = () => {
       }
     }
   `);
-  console.log('bathroom1 - ', images.moxy_bathroom_1.image);
   return (
     <Layout>
       <Spotlight

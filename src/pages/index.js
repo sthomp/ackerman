@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Spotlight from '../components/spotlight';

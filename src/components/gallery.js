@@ -2,19 +2,16 @@ import * as React from 'react';
 import { GalleryGrid2, GalleryGrid3, GalleryGridMany } from './grid';
 import { Heading3, Heading4 } from './text';
 
-function Header({ title, subtitle, rightAccessory }) {
+function Header({ title, subtitle }) {
   return (
-    <div className='container mx-auto p-4 flex justify-between'>
-      <div>
-        {title && <Heading3>{title}</Heading3>}
-        {subtitle && <Heading4>{subtitle}</Heading4>}
-      </div>
-      {rightAccessory && <div>{rightAccessory}</div>}
+    <div className='container mx-auto p-4'>
+      {title && <Heading3>{title}</Heading3>}
+      {subtitle && <Heading4>{subtitle}</Heading4>}
     </div>
   );
 }
 
-export function AutoGallery({ title, subtitle, items, rightAccessory }) {
+export function AutoGallery({ title, subtitle, items }) {
   const body = (() => {
     if (!items) {
       return <p>empty!</p>;
@@ -29,24 +26,13 @@ export function AutoGallery({ title, subtitle, items, rightAccessory }) {
       return <GalleryGridMany items={items} />;
     }
   })();
-  return (
-    <Gallery
-      title={title}
-      subtitle={subtitle}
-      body={body}
-      rightAccessory={rightAccessory}
-    />
-  );
+  return <Gallery title={title} subtitle={subtitle} body={body} />;
 }
 
-export function Gallery({ title, subtitle, body, rightAccessory }) {
+export function Gallery({ title, subtitle, body }) {
   return (
     <div className='border-b'>
-      <Header
-        title={title}
-        subtitle={subtitle}
-        rightAccessory={rightAccessory}
-      />
+      <Header title={title} subtitle={subtitle} />
       {body}
     </div>
   );
