@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Img from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Spotlight from '../components/spotlight';
@@ -11,6 +10,13 @@ export const myFragment = graphql`
     id
     url
     desc
+    image {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     localImage {
       childImageSharp {
         fluid {
@@ -48,20 +54,12 @@ const InspirationPage = () => {
         ...RemoteImageFields
       }
 
-      half_bath1: file(relativePath: { eq: "inspiration_half_bath1.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      moxy_bathroom_1: remoteImagesYaml(id: { eq: "moxy_bathroom_1" }) {
+        ...RemoteImageFields
       }
 
-      half_bath2: file(relativePath: { eq: "inspiration_half_bath2.jpg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      moxy_bathroom_2: remoteImagesYaml(id: { eq: "moxy_bathroom_2" }) {
+        ...RemoteImageFields
       }
 
       _26_green_st: remoteImagesYaml(id: { eq: "26_green_st" }) {
@@ -93,6 +91,7 @@ const InspirationPage = () => {
       }
     }
   `);
+  console.log('bathroom1 - ', images.moxy_bathroom_1.image);
   return (
     <Layout>
       <Spotlight
@@ -136,14 +135,8 @@ const InspirationPage = () => {
         title='Secondary Bathroom'
         subtitle='Standing Shower'
         items={[
-          <Img
-            fluid={images.half_bath1.childImageSharp.fluid}
-            alt='Half Bath1'
-          />,
-          <Img
-            fluid={images.half_bath2.childImageSharp.fluid}
-            alt='Half Bath2'
-          />,
+          <GalleryImage data={images.moxy_bathroom_1} />,
+          <GalleryImage data={images.moxy_bathroom_2} />,
         ]}
       />
 

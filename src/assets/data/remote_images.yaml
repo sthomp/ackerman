@@ -57,3 +57,11 @@
   url: https://photos.zillowstatic.com/fp/f22f167b47e0155bf75aaf4a91042498-uncropped_scaled_within_1536_1152.webp
   source: https://www.zillow.com/homedetails/402-Washington-St-Hudson-NY-12534/215386593_zpid/?
   desc: 402 Washington - Yard
+
+- id: moxy_bathroom_1
+  image: ../images/inspiration_half_bath1.jpg
+  desc: Half Bathroom - Moxy Hotel
+
+- id: moxy_bathroom_2
+  image: ../images/inspiration_half_bath2.jpg
+  desc: Half Bathroom - Moxy Hotel
