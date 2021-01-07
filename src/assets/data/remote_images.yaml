@@ -16,17 +16,12 @@
 - id: 38_saint_lukes
   url: https://photos.zillowstatic.com/fp/4d50727801b31b3af73bb9a38a4089ee-uncropped_scaled_within_1536_1152.webp
   source: https://www.zillow.com/homedetails/38-Saint-Lukes-Pl-Beacon-NY-12508/30080438_zpid/?
-  desc: Wide plank floors
+  desc: Wide plank floors · Kitchen Island
 
 - id: 23_n_cedar_master_bed
   url: https://photos.zillowstatic.com/fp/9d9aef341ee4c92543da92d7c3e6c986-uncropped_scaled_within_1536_1152.webp
   source: https://www.zillow.com/homedetails/23-N-Cedar-St-Beacon-NY-12508/30078263_zpid/
   desc: Cathedral Ceiling · Celing Fan
-
-- id: 26_green_st
-  url: https://photos.zillowstatic.com/fp/75d611a1bdc71ce91a37e22b19d33967-uncropped_scaled_within_1536_1152.webp
-  source: https://www.zillow.com/homedetails/26-Green-St-Beacon-NY-12508/30080845_zpid/?
-  desc: Exposed Beams · Wide plank floors
 
 - id: 15_lawton_ave
   url: https://photos.zillowstatic.com/fp/abe08bb313193923dacc74e58a35ab5f-uncropped_scaled_within_1536_1152.webp
@@ -71,12 +66,17 @@
 - id: humewood_interior
   url: https://images.squarespace-cdn.com/content/v1/5c1927e9aa49a164b0c537d9/1545422802537-DIABXGOLAX72ACC92FOA/ke17ZwdGBToddI8pDm48kG9vGNMuKDcNa_zRy0TqxXUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcM8dUODUxgq3hdOgCHNjO_oJKkHj-NORtzQ-_0XN_Em3krvveOZy31-04kxzj6aIr/15.JPG?format=2500w
   source: https://www.replacementdesign.com/#/humewood/
-  desc: Humewood - Interior. Bright and wide plank floors.
+  desc: Large Patio Doors for Light
 
 - id: humewood_rear
   url: https://images.squarespace-cdn.com/content/v1/5c1927e9aa49a164b0c537d9/1545422807339-PAGAHZO2Q2YC17594YFH/ke17ZwdGBToddI8pDm48kJMbVVgZXhimBTg3XUeet9MUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcTsoP9o7xMBPda-HPdIOfLNGYbrmrrrBPrUxzprE-FmRUZj53IKEhUzoUaAvcfj3V/27.JPG?format=2500w
   source: https://www.replacementdesign.com/#/humewood/
   desc: Walk out patio · Upper Patio
+
+- id: kingsway_interior
+  url: https://images.squarespace-cdn.com/content/v1/5c1927e9aa49a164b0c537d9/1545153309650-48PKWSQSCJUX9ZD4RXH8/ke17ZwdGBToddI8pDm48kG4sWXxm5MLGzYXxhI3Emb8UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcDFrDsapgIo0q8jUcW8rNPjhtZThjXNYUQzTwr7Xuxi1NR1RJqyZivqtN160e7oMj/8.jpg?format=2500w
+  source: https://www.replacementdesign.com/#/kingsway/
+  desc: Large Windows · Kitchen Island · Full Height Cabinets
 
 - id: moxy_bathroom_1
   image: ../images/inspiration_half_bath1.jpg

@@ -77,6 +77,10 @@ const InspirationPage = () => {
         ...RemoteImageFields
       }
 
+      kingsway_interior: remoteImagesYaml(id: { eq: "kingsway_interior" }) {
+        ...RemoteImageFields
+      }
+
       _17_north: remoteImagesYaml(id: { eq: "17_north" }) {
         ...RemoteImageFields
       }
@@ -102,8 +106,8 @@ const InspirationPage = () => {
         items={[
           <GalleryImage data={images._6_spring_interior} />,
           <GalleryImage data={images._38_saint_lukes} />,
-          <GalleryImage data={images._26_green_st} />,
-          <GalleryImage data={images.humewood_front_window} />,
+          <GalleryImage data={images.humewood_interior} />,
+          <GalleryImage data={images.kingsway_interior} />,
         ]}
       />
 
