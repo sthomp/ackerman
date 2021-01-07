@@ -91,42 +91,42 @@
   image: ../images/inspiration_half_bath2.jpg
   desc: Half Bathroom - Moxy Hotel
 
+# Survey
 - id: survey
   image: ../images/ackerman_survey.jpg
-  desc: Survey
 
+# New LVL beam installed
 - id: beam
   image: ../images/ackerman_beam.jpeg
-  desc: Exposed Beam
 
+# Torn down garage
 - id: garage
   image: ../images/garage.jpg
-  desc: Garage
 
+# Basement looking north
 - id: basement1
   image: ../images/house_basement1.jpg
-  desc: Basement
 
+# Basement looking south
 - id: basement2
   image: ../images/house_basement2.jpg
-  desc: Basement
 
+# Basement temp posts
 - id: basement3
   image: ../images/basement3.jpg
-  desc: Basement
 
+# Front view of the house during construction
 - id: house_front
   image: ../images/house_front.jpg
-  desc: Front
 
+  # Rear view of the house during construction
 - id: house_rear
   image: ../images/house_rear.jpg
-  desc: Front
 
+# View of the street during construction
 - id: house_street
   image: ../images/house_street.jpg
-  desc: Street View
 
+# Top floor with frames
 - id: top_floor
   image: ../images/top_floor.jpg
-  desc: Top Floor
