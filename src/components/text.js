@@ -1,4 +1,10 @@
 import * as React from 'react';
+import { Link as GatsbyLink } from 'gatsby';
+
+const fontDefault = {
+  fontFamily: 'Helvetica, Arial',
+  letterSpacing: '0.06em',
+};
 
 const colorLight = {
   primary: 'white',
@@ -10,57 +16,65 @@ const colorDark = {
   secondary: '#575757',
 };
 
-export const linkStyle = {
-  color: colorDark.primary,
-  fontFamily: 'Helvetica, Arial',
+const linkStyleDefault = {
+  ...fontDefault,
   fontWeight: '400',
-  fontStyle: 'normal',
   fontSize: '13px',
-  letterSpacing: '0.06em',
   lineHeight: '1.8em',
-  textDecoration: 'none',
 };
+
+export const linkStyle = {
+  ...linkStyleDefault,
+};
+
+export const linkStyleActive = {
+  ...linkStyleDefault,
+};
+
+export function Link({ to, children }) {
+  return (
+    <GatsbyLink
+      to={to}
+      className='text-gray-400 hover:text-gray-900 transform duration-300 ease-in-out'
+      style={linkStyle}
+      activeClassName='text-gray-900'
+    >
+      {children}
+    </GatsbyLink>
+  );
+}
 
 export function Heading1({ light, children }) {
   const defaultStyle = {
+    ...fontDefault,
     color: light ? colorLight.primary : colorDark.primary,
-    fontFamily: 'Helvetica, Arial',
     fontWeight: '100',
-    fontStyle: 'normal',
     fontSize: '1.6em',
-    letterSpacing: '0.06em',
     lineHeight: '1.2em',
     textTransform: 'uppercase',
-    textDecoration: 'none',
   };
   return <h1 style={defaultStyle}>{children}</h1>;
 }
 
 export function Heading3({ light, children }) {
   const defaultStyle = {
+    ...fontDefault,
     color: light ? colorLight.primary : colorDark.primary,
-    fontFamily: 'Helvetica, Arial',
     fontWeight: '100',
-    fontStyle: 'normal',
     fontSize: '1.6em',
-    letterSpacing: '0.06em',
     lineHeight: '1.2em',
     textTransform: 'uppercase',
-    textDecoration: 'none',
   };
   return <h3 style={defaultStyle}>{children}</h3>;
 }
 
 export function Heading4({ light, children }) {
   const defaultStyle = {
+    ...fontDefault,
     color: light ? colorLight.secondary : colorDark.secondary,
-    fontFamily: 'Helvetica, Arial',
     fontWeight: '400',
-    fontStyle: 'normal',
     fontSize: '13px',
-    letterSpacing: '0.06em',
     lineHeight: '1.8em',
-    textDecoration: 'none',
   };
   return <h4 style={defaultStyle}>{children}</h4>;
 }

@@ -1,20 +1,15 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
-import { linkStyle } from './text';
+import { Link } from './text';
 
 export function NavHeader() {
   return (
     <nav>
       <ul className='flex flex-row justify-end space-x-8 text-white'>
         <li>
-          <Link to='/' style={linkStyle} className={'text-gray-900'}>
-            House
-          </Link>
+          <Link to='/'>House</Link>
         </li>
         <li>
-          <Link to='/inspiration' style={linkStyle} className={'text-gray-900'}>
-            Inspiration
-          </Link>
+          <Link to='/inspiration'>Inspiration</Link>
         </li>
       </ul>
     </nav>
