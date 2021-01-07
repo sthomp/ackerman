@@ -63,6 +63,26 @@
   source: https://www.zillow.com/homedetails/17-North-St-Beacon-NY-12508/30080180_zpid/?
   desc: 17 North St - Staircase
 
+- id: humewood_entry
+  url: https://images.squarespace-cdn.com/content/v1/5c1927e9aa49a164b0c537d9/1545422799627-ETG61M8F1TA935O54GJF/ke17ZwdGBToddI8pDm48kHWkec8v6F2qMcRzHWbXPksUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcDnYfjZMcrh-crqhcov7IU2u2CzcA9w9OJ2TqRMplmxj_PMtzbXprBsyq0z2KFcrf/6.JPG?format=2500w
+  source: https://www.replacementdesign.com/#/humewood/
+  desc: Humewood - Entry
+
+- id: humewood_front_window
+  url: https://images.squarespace-cdn.com/content/v1/5c1927e9aa49a164b0c537d9/1545422798900-OVBUG2XR0TS82GNER588/ke17ZwdGBToddI8pDm48kL3En1kOI8V0rZ7zc9TkoBQUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKck5vY5m1FiBQ1lLkq4Tj8l43zel-PKsGLlH2G7luB63mw4yBAPEXOKI2_2w1_TLb1/4.JPG?format=2500w
+  source: https://www.replacementdesign.com/#/humewood/
+  desc: Large Window
+
+- id: humewood_interior
+  url: https://images.squarespace-cdn.com/content/v1/5c1927e9aa49a164b0c537d9/1545422802537-DIABXGOLAX72ACC92FOA/ke17ZwdGBToddI8pDm48kG9vGNMuKDcNa_zRy0TqxXUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcM8dUODUxgq3hdOgCHNjO_oJKkHj-NORtzQ-_0XN_Em3krvveOZy31-04kxzj6aIr/15.JPG?format=2500w
+  source: https://www.replacementdesign.com/#/humewood/
+  desc: Humewood - Interior. Bright and wide plank floors.
+
+- id: humewood_rear
+  url: https://images.squarespace-cdn.com/content/v1/5c1927e9aa49a164b0c537d9/1545422807339-PAGAHZO2Q2YC17594YFH/ke17ZwdGBToddI8pDm48kJMbVVgZXhimBTg3XUeet9MUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcTsoP9o7xMBPda-HPdIOfLNGYbrmrrrBPrUxzprE-FmRUZj53IKEhUzoUaAvcfj3V/27.JPG?format=2500w
+  source: https://www.replacementdesign.com/#/humewood/
+  desc: Humewood - Rear. Patio.
+
 - id: moxy_bathroom_1
   image: ../images/inspiration_half_bath1.jpg
   desc: Half Bathroom - Moxy Hotel

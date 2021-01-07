@@ -67,6 +67,24 @@ const InspirationPage = () => {
         ...RemoteImageFields
       }
 
+      humewood_entry: remoteImagesYaml(id: { eq: "humewood_entry" }) {
+        ...RemoteImageFields
+      }
+
+      humewood_front_window: remoteImagesYaml(
+        id: { eq: "humewood_front_window" }
+      ) {
+        ...RemoteImageFields
+      }
+
+      humewood_interior: remoteImagesYaml(id: { eq: "humewood_interior" }) {
+        ...RemoteImageFields
+      }
+
+      humewood_rear: remoteImagesYaml(id: { eq: "humewood_rear" }) {
+        ...RemoteImageFields
+      }
+
       _17_north: remoteImagesYaml(id: { eq: "17_north" }) {
         ...RemoteImageFields
       }
@@ -78,7 +96,11 @@ const InspirationPage = () => {
         headerAlign='right'
         title='Entry Way'
         subtitle='Small Outdoor Porch · Living Room Extension'
-        items={[<GalleryImage data={images._27_ackerman_exterior} />]}
+        items={[
+          <GalleryImage data={images.humewood_entry} />,
+          <GalleryImage data={images.humewood_front_window} />,
+          <GalleryImage data={images._27_ackerman_exterior} />,
+        ]}
       />
 
       <AutoGallery
@@ -89,6 +111,7 @@ const InspirationPage = () => {
           <GalleryImage data={images._6_spring_interior} />,
           <GalleryImage data={images._38_saint_lukes} />,
           <GalleryImage data={images._26_green_st} />,
+          <GalleryImage data={images.humewood_front_window} />,
         ]}
       />
 
@@ -112,6 +135,7 @@ const InspirationPage = () => {
           <GalleryImage data={images._6_spring_patio} />,
           <GalleryImage data={images._402_washington_1} />,
           <GalleryImage data={images._402_washington_2} />,
+          <GalleryImage data={images.humewood_rear} />,
         ]}
       />
 
