@@ -35,19 +35,11 @@ const InspirationPage = () => {
         ...RemoteImageFields
       }
 
-      moxy_bathroom_2: remoteImagesYaml(id: { eq: "moxy_bathroom_2" }) {
-        ...RemoteImageFields
-      }
-
       _26_green_st: remoteImagesYaml(id: { eq: "26_green_st" }) {
         ...RemoteImageFields
       }
 
       _15_lawton_ave: remoteImagesYaml(id: { eq: "15_lawton_ave" }) {
-        ...RemoteImageFields
-      }
-
-      _15_lawton_ave_2: remoteImagesYaml(id: { eq: "15_lawton_ave_2" }) {
         ...RemoteImageFields
       }
 
@@ -121,7 +113,6 @@ const InspirationPage = () => {
         subtitle='Wide panel · Doorway Clearance · Landing Space'
         items={[
           <GalleryImage data={images._15_lawton_ave} />,
-          <GalleryImage data={images._15_lawton_ave_2} />,
           <GalleryImage data={images._175_hartsdale_1} />,
           <GalleryImage data={images._17_north} />,
         ]}
@@ -142,10 +133,7 @@ const InspirationPage = () => {
       <AutoGallery
         title='Secondary Bathroom'
         subtitle='Standing Shower'
-        items={[
-          <GalleryImage data={images.moxy_bathroom_1} />,
-          <GalleryImage data={images.moxy_bathroom_2} />,
-        ]}
+        items={[<GalleryImage data={images.moxy_bathroom_1} />]}
       />
 
       <AutoGallery

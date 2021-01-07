@@ -1,7 +1,7 @@
 - id: 27_ackerman_exterior
   url: https://photos.zillowstatic.com/fp/d62f08ff14c044b04427611f0ba8f62e-uncropped_scaled_within_1536_1152.webp
   source: https://www.zillow.com/homedetails/27-Ackerman-St-Beacon-NY-12508/30080194_zpid
-  desc: 27 Ackerman - Front
+  desc: Front extension · Half Width Porch
 
 - id: 6_spring_interior
   url: https://a0.muscache.com/im/pictures/bdd5a902-aff5-49a1-8d3d-d0d5f32dec92.jpg?im_w=1440
@@ -11,7 +11,7 @@
 - id: 6_spring_patio
   url: https://a0.muscache.com/im/pictures/856f614d-b9ba-4d1c-9e4b-622e936aa7e0.jpg?im_w=1440
   source: https://www.airbnb.com/rooms/plus/24774469
-  desc: 6 Spring - Patio
+  desc: Low Maintenance Outdoor Space
 
 - id: 38_saint_lukes
   url: https://photos.zillowstatic.com/fp/4d50727801b31b3af73bb9a38a4089ee-uncropped_scaled_within_1536_1152.webp
@@ -21,7 +21,7 @@
 - id: 23_n_cedar_master_bed
   url: https://photos.zillowstatic.com/fp/9d9aef341ee4c92543da92d7c3e6c986-uncropped_scaled_within_1536_1152.webp
   source: https://www.zillow.com/homedetails/23-N-Cedar-St-Beacon-NY-12508/30078263_zpid/
-  desc: 23 N Cedar - Master Bed
+  desc: Cathedral Ceiling · Celing Fan
 
 - id: 26_green_st
   url: https://photos.zillowstatic.com/fp/75d611a1bdc71ce91a37e22b19d33967-uncropped_scaled_within_1536_1152.webp
@@ -31,42 +31,37 @@
 - id: 15_lawton_ave
   url: https://photos.zillowstatic.com/fp/abe08bb313193923dacc74e58a35ab5f-uncropped_scaled_within_1536_1152.webp
   source: https://www.zillow.com/homedetails/15-Lawton-Ave-Hartsdale-NY-10530/33032861_zpid/?
-  desc: 15 Lawton Ave - Staircase
-
-- id: 15_lawton_ave_2
-  url: https://photos.zillowstatic.com/fp/53a1b091e626d95d940c7d6d71367747-uncropped_scaled_within_1536_1152.webp
-  source: https://www.zillow.com/homedetails/15-Lawton-Ave-Hartsdale-NY-10530/33032861_zpid/?
-  desc: 15 Lawton Ave - Staircase
+  desc: Open Staircase
 
 - id: 175_hartsdale_1
   url: https://photos.zillowstatic.com/fp/f80ee72f5c0921fcffebd4bfb2536763-uncropped_scaled_within_1536_1152.webp
   source: https://www.zillow.com/homedetails/175-W-Hartsdale-Ave-Hartsdale-NY-10530/33032236_zpid/?
-  desc: 175 Hartsdale - Staircase Landing
+  desc: Spacious Landing Area
 
 - id: 175_hartsdale_2
   url: https://photos.zillowstatic.com/fp/598c8619e4a96dd93efddc93db63fcee-uncropped_scaled_within_1536_1152.webp
   source: https://www.zillow.com/homedetails/175-W-Hartsdale-Ave-Hartsdale-NY-10530/33032236_zpid/?
-  desc: 175 Hartsdale - Bedroom
+  desc: Wide Plank Floors
 
 - id: 402_washington_1
   url: https://photos.zillowstatic.com/fp/a73f8dc2fa17d928e8e453a5e65950e6-uncropped_scaled_within_1536_1152.webp
   source: https://www.zillow.com/homedetails/402-Washington-St-Hudson-NY-12534/215386593_zpid/?
-  desc: 402 Washington - Yard
+  desc: Small Shrubs · No Grass
 
 - id: 402_washington_2
   url: https://photos.zillowstatic.com/fp/f22f167b47e0155bf75aaf4a91042498-uncropped_scaled_within_1536_1152.webp
   source: https://www.zillow.com/homedetails/402-Washington-St-Hudson-NY-12534/215386593_zpid/?
-  desc: 402 Washington - Yard
+  desc: No Grass
 
 - id: 17_north
   url: https://photos.zillowstatic.com/fp/d2d50cf9dda093bc9e84e85aee692b13-uncropped_scaled_within_1536_1152.webp
   source: https://www.zillow.com/homedetails/17-North-St-Beacon-NY-12508/30080180_zpid/?
-  desc: 17 North St - Staircase
+  desc: Wide Staircase Planks
 
 - id: humewood_entry
   url: https://images.squarespace-cdn.com/content/v1/5c1927e9aa49a164b0c537d9/1545422799627-ETG61M8F1TA935O54GJF/ke17ZwdGBToddI8pDm48kHWkec8v6F2qMcRzHWbXPksUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcDnYfjZMcrh-crqhcov7IU2u2CzcA9w9OJ2TqRMplmxj_PMtzbXprBsyq0z2KFcrf/6.JPG?format=2500w
   source: https://www.replacementdesign.com/#/humewood/
-  desc: Humewood - Entry
+  desc: Spacious entry
 
 - id: humewood_front_window
   url: https://images.squarespace-cdn.com/content/v1/5c1927e9aa49a164b0c537d9/1545422798900-OVBUG2XR0TS82GNER588/ke17ZwdGBToddI8pDm48kL3En1kOI8V0rZ7zc9TkoBQUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKck5vY5m1FiBQ1lLkq4Tj8l43zel-PKsGLlH2G7luB63mw4yBAPEXOKI2_2w1_TLb1/4.JPG?format=2500w
@@ -81,15 +76,11 @@
 - id: humewood_rear
   url: https://images.squarespace-cdn.com/content/v1/5c1927e9aa49a164b0c537d9/1545422807339-PAGAHZO2Q2YC17594YFH/ke17ZwdGBToddI8pDm48kJMbVVgZXhimBTg3XUeet9MUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcTsoP9o7xMBPda-HPdIOfLNGYbrmrrrBPrUxzprE-FmRUZj53IKEhUzoUaAvcfj3V/27.JPG?format=2500w
   source: https://www.replacementdesign.com/#/humewood/
-  desc: Humewood - Rear. Patio.
+  desc: Walk out patio · Upper Patio
 
 - id: moxy_bathroom_1
   image: ../images/inspiration_half_bath1.jpg
-  desc: Half Bathroom - Moxy Hotel
-
-- id: moxy_bathroom_2
-  image: ../images/inspiration_half_bath2.jpg
-  desc: Half Bathroom - Moxy Hotel
+  desc: Tile Design
 
 # Survey
 - id: survey
