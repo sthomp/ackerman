@@ -14,8 +14,8 @@ export default function GalleryImage({ data }) {
           style={{ height: '100%' }}
         />
       </div>
-      <div className='opacity-0 transition duration-250 ease-in-out hover:opacity-100 hover:bg-opacity-50 absolute left-0 top-0 right-0 bottom-0 w-full bg-white flex justify-center items-center'>
-        {<Heading3>{data.desc}</Heading3>}
+      <div className='opacity-0 transition duration-250 ease-in-out hover:opacity-100 bg-opacity-50 absolute left-0 top-0 right-0 bottom-0 w-full bg-black flex justify-center items-center p-2'>
+        {<Heading3 light={true}>{data.desc}</Heading3>}
       </div>
     </div>
   );
