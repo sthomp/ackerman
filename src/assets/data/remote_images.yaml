@@ -78,6 +78,16 @@
   source: https://www.replacementdesign.com/#/kingsway/
   desc: Large Windows · Kitchen Island · Full Height Cabinets
 
+- id: hgtv_bathroom1
+  url: https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2018/6/29/0/FOD18_Natalie-Myers_Ladera-Heights_17.jpg.rend.hgtvcom.966.644.suffix/1530284627969.jpeg
+  source: https://www.hgtv.com/design/rooms/bathrooms/15-dreamy-spa-inspired-bathrooms-pictures
+  desc: Wood Cabinet · Double Sink · Natural Light
+
+- id: hgtv_bathroom2
+  url: https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2018/10/8/0/IO_Kirsten-Holmstedt_Chiquita-Ln_1.jpg.rend.hgtvcom.966.644.suffix/1539006923171.jpeg
+  source: https://www.hgtv.com/design/rooms/bathrooms/15-dreamy-spa-inspired-bathrooms-pictures
+  desc: Wood Cabinet · Double Sink
+
 - id: moxy_bathroom_1
   image: ../images/inspiration_half_bath1.jpg
   desc: Tile Design

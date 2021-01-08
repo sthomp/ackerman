@@ -84,6 +84,14 @@ const InspirationPage = () => {
       _17_north: remoteImagesYaml(id: { eq: "17_north" }) {
         ...RemoteImageFields
       }
+
+      hgtv_bathroom1: remoteImagesYaml(id: { eq: "hgtv_bathroom1" }) {
+        ...RemoteImageFields
+      }
+
+      hgtv_bathroom2: remoteImagesYaml(id: { eq: "hgtv_bathroom2" }) {
+        ...RemoteImageFields
+      }
     }
   `);
   return (
@@ -135,9 +143,14 @@ const InspirationPage = () => {
       />
 
       <AutoGallery
-        title='Secondary Bathroom'
-        subtitle='Standing Shower'
-        items={[<GalleryImage data={images.moxy_bathroom_1} />]}
+        title='Bathrooms'
+        subtitle='Standing Shower · Wood Features · Shelving'
+        headerAlign='top'
+        items={[
+          <GalleryImage data={images.moxy_bathroom_1} />,
+          <GalleryImage data={images.hgtv_bathroom1} />,
+          <GalleryImage data={images.hgtv_bathroom2} />,
+        ]}
       />
 
       <AutoGallery
