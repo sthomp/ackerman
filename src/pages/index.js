@@ -47,6 +47,10 @@ const IndexPage = () => {
       top_floor: remoteImagesYaml(id: { eq: "top_floor" }) {
         ...RemoteImageFields
       }
+
+      foundation_blocks: remoteImagesYaml(id: { eq: "foundation_blocks" }) {
+        ...RemoteImageFields
+      }
     }
   `);
   return (
@@ -93,13 +97,14 @@ const IndexPage = () => {
       />
 
       <AutoGallery
-        title='Basement'
+        title='Foundation'
         headerAlign='top'
-        subtitle='New support beams. Brick repair.'
+        subtitle='New support beams and concrete blocks.'
         items={[
           <GalleryImage data={images.basement1} />,
           <GalleryImage data={images.basement3} />,
           <GalleryImage data={images.basement2} />,
+          <GalleryImage data={images.foundation_blocks} />,
         ]}
       />
 

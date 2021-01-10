@@ -131,3 +131,7 @@
 # Top floor with frames
 - id: top_floor
   image: ../images/top_floor.jpg
+
+# Top floor with frames
+- id: foundation_blocks
+  image: ../images/foundation_blocks.jpg
