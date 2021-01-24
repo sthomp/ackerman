@@ -92,6 +92,14 @@ const InspirationPage = () => {
       hgtv_bathroom2: remoteImagesYaml(id: { eq: "hgtv_bathroom2" }) {
         ...RemoteImageFields
       }
+
+      shed1: remoteImagesYaml(id: { eq: "shed1" }) {
+        ...RemoteImageFields
+      }
+
+      shed2: remoteImagesYaml(id: { eq: "shed2" }) {
+        ...RemoteImageFields
+      }
     }
   `);
   return (
@@ -131,18 +139,6 @@ const InspirationPage = () => {
       />
 
       <AutoGallery
-        headerAlign='left'
-        title='Outdoor Space'
-        subtitle='Low Upkeep · No Grass · Space to relax and BBQ'
-        items={[
-          <GalleryImage data={images._6_spring_patio} />,
-          <GalleryImage data={images._402_washington_1} />,
-          <GalleryImage data={images._402_washington_2} />,
-          <GalleryImage data={images.humewood_rear} />,
-        ]}
-      />
-
-      <AutoGallery
         title='Bathrooms'
         subtitle='Standing Shower · Wood Features · Shelving'
         headerAlign='top'
@@ -159,6 +155,20 @@ const InspirationPage = () => {
         items={[
           <GalleryImage data={images._23_n_cedar_master_bed} />,
           <GalleryImage data={images._175_hartsdale_2} />,
+        ]}
+      />
+
+      <AutoGallery
+        headerAlign='left'
+        title='Outdoor Space'
+        subtitle='Low Upkeep · No Grass · Space to relax and BBQ'
+        items={[
+          <GalleryImage data={images._6_spring_patio} />,
+          <GalleryImage data={images._402_washington_1} />,
+          <GalleryImage data={images._402_washington_2} />,
+          <GalleryImage data={images.humewood_rear} />,
+          <GalleryImage data={images.shed1} />,
+          <GalleryImage data={images.shed2} />,
         ]}
       />
     </Layout>

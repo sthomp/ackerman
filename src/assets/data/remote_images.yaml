@@ -88,6 +88,16 @@
   source: https://www.hgtv.com/design/rooms/bathrooms/15-dreamy-spa-inspired-bathrooms-pictures
   desc: Wood Cabinet · Double Sink
 
+- id: shed1
+  image: ../images/shed1.jpg
+  source: https://images.thestar.com/zu9dN9csg2BzyOYO1HqWU1C8Fn4=/1086x815/smart/filters:cb(1602705171355)/https://www.thestar.com/content/dam/thestar/life/homes/2020/10/14/yard-sheds-get-a-promotion-in-our-pandemic-wfh-habitats/_1_cover_main_shed_after.jpg
+  desc: Outdoor Studio
+
+- id: shed2
+  url: https://static01.nyt.com/images/2020/07/19/realestate/14sheltering1/oakImage-1594329545626-superJumbo.jpg?quality=90&auto=webp
+  source: https://static01.nyt.com/images/2020/07/19/realestate/14sheltering1/oakImage-1594329545626-superJumbo.jpg?quality=90&auto=webp
+  desc: Outdoor Studio
+
 - id: moxy_bathroom_1
   image: ../images/inspiration_half_bath1.jpg
   desc: Tile Design
