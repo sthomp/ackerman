@@ -98,6 +98,18 @@
   source: https://static01.nyt.com/images/2020/07/19/realestate/14sheltering1/oakImage-1594329545626-superJumbo.jpg?quality=90&auto=webp
   desc: Outdoor Studio
 
+- id: modern_farmhouse_siding1
+  url: https://i.pinimg.com/originals/fa/80/47/fa8047309340f733ef5c993ac09a39b1.jpg
+  source: https://images.app.goo.gl/pRBua1UvaqqYytPj6
+
+- id: modern_farmhouse_siding2
+  url: https://i.pinimg.com/originals/2b/b5/1a/2bb51a70d674a33b25c30d007689c9d2.jpg
+  source: https://images.app.goo.gl/r7G84Mc7qj3KXeby5
+
+- id: modern_farmhouse_siding3
+  url: https://i1.wp.com/beckiowens.com/wp-content/uploads/2019/07/BECKI-OWENS-Dream-Home-White-Modern-Farmhouse3.jpg?resize=682%2C1023&ssl=1
+  source: https://images.app.goo.gl/x12iYEaaGP8pUhYJ8
+
 - id: moxy_bathroom_1
   image: ../images/inspiration_half_bath1.jpg
   desc: Tile Design

@@ -100,10 +100,39 @@ const InspirationPage = () => {
       shed2: remoteImagesYaml(id: { eq: "shed2" }) {
         ...RemoteImageFields
       }
+
+      modern_farmhouse_siding1: remoteImagesYaml(
+        id: { eq: "modern_farmhouse_siding1" }
+      ) {
+        ...RemoteImageFields
+      }
+
+      modern_farmhouse_siding2: remoteImagesYaml(
+        id: { eq: "modern_farmhouse_siding2" }
+      ) {
+        ...RemoteImageFields
+      }
+
+      modern_farmhouse_siding3: remoteImagesYaml(
+        id: { eq: "modern_farmhouse_siding3" }
+      ) {
+        ...RemoteImageFields
+      }
     }
   `);
   return (
     <Layout>
+      <AutoGallery
+        headerAlign='top'
+        title='Siding'
+        subtitle='Modern Farmhouse · White Trim · Black Accents'
+        items={[
+          <GalleryImage data={images.modern_farmhouse_siding1} />,
+          <GalleryImage data={images.modern_farmhouse_siding2} />,
+          <GalleryImage data={images.modern_farmhouse_siding3} />,
+        ]}
+      />
+
       <AutoGallery
         headerAlign='right'
         title='Entry Way'
