@@ -157,3 +157,18 @@
 # Top floor with frames
 - id: foundation_blocks
   image: ../images/foundation_blocks.jpg
+
+- id: architect1
+  image: ../images/architect1.png
+
+- id: architect2
+  image: ../images/architect2.png
+
+- id: architect3
+  image: ../images/architect3.png
+
+- id: construct1
+  image: ../images/construct1.jpg
+
+- id: construct2
+  image: ../images/construct2.jpg

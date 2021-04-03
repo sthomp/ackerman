@@ -51,6 +51,26 @@ const IndexPage = () => {
       foundation_blocks: remoteImagesYaml(id: { eq: "foundation_blocks" }) {
         ...RemoteImageFields
       }
+
+      architect1: remoteImagesYaml(id: { eq: "architect1" }) {
+        ...RemoteImageFields
+      }
+
+      architect2: remoteImagesYaml(id: { eq: "architect2" }) {
+        ...RemoteImageFields
+      }
+
+      architect3: remoteImagesYaml(id: { eq: "architect3" }) {
+        ...RemoteImageFields
+      }
+
+      construct1: remoteImagesYaml(id: { eq: "construct1" }) {
+        ...RemoteImageFields
+      }
+
+      construct2: remoteImagesYaml(id: { eq: "construct2" }) {
+        ...RemoteImageFields
+      }
     }
   `);
   return (
@@ -60,6 +80,26 @@ const IndexPage = () => {
         title='Structure'
         subtitle='Built in 1930 · Wood Frame · Brick Foundation'
         items={[<GalleryImage data={images.front} />]}
+      />
+
+      <AutoGallery
+        headerAlign='left'
+        title='Design'
+        subtitle='Architecture Renderings'
+        items={[
+          <GalleryImage data={images.architect1} />,
+          <GalleryImage data={images.architect2} />,
+          <GalleryImage data={images.architect3} />,
+        ]}
+      />
+      
+      <AutoGallery
+        headerAlign='top'
+        title='Construction'
+        items={[
+          <GalleryImage data={images.construct1} />,
+          <GalleryImage data={images.construct2} />,
+        ]}
       />
 
       <AutoGallery
