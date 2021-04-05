@@ -172,3 +172,6 @@
 
 - id: construct2
   image: ../images/construct2.jpg
+
+- id: construct3
+  image: ../images/construct3.jpg
