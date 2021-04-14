@@ -175,3 +175,18 @@
 
 - id: construct3
   image: ../images/construct3.jpg
+
+- id: construct4
+  image: ../images/construct4.jpeg
+
+- id: construct5
+  image: ../images/construct5.jpeg
+
+- id: construct6
+  image: ../images/construct6.jpeg
+
+- id: construct7
+  image: ../images/construct7.jpg
+
+- id: construct8
+  image: ../images/construct8.jpg
