@@ -95,6 +95,10 @@ const IndexPage = () => {
       construct8: remoteImagesYaml(id: { eq: "construct8" }) {
         ...RemoteImageFields
       }
+
+      construct9: remoteImagesYaml(id: { eq: "construct9" }) {
+        ...RemoteImageFields
+      }
     }
   `);
   return (
@@ -129,6 +133,7 @@ const IndexPage = () => {
           <GalleryImage data={images.construct6} />,
           <GalleryImage data={images.construct7} />,
           <GalleryImage data={images.construct8} />,
+          <GalleryImage data={images.construct9} />,
         ]}
       />
 
