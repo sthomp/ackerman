@@ -99,6 +99,14 @@ const IndexPage = () => {
       construct9: remoteImagesYaml(id: { eq: "construct9" }) {
         ...RemoteImageFields
       }
+
+      rear_windows: remoteImagesYaml(id: { eq: "rear_windows" }) {
+        ...RemoteImageFields
+      }
+
+      master_bed_framed: remoteImagesYaml(id: { eq: "master_bed_framed" }) {
+        ...RemoteImageFields
+      }
     }
   `);
   return (
@@ -132,8 +140,10 @@ const IndexPage = () => {
           <GalleryImage data={images.construct5} />,
           <GalleryImage data={images.construct6} />,
           <GalleryImage data={images.construct7} />,
-          <GalleryImage data={images.construct8} />,
           <GalleryImage data={images.construct9} />,
+          <GalleryImage data={images.construct8} />,
+          <GalleryImage data={images.rear_windows} />,
+          <GalleryImage data={images.master_bed_framed} />,
         ]}
       />
 

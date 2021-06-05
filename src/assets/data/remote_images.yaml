@@ -193,3 +193,9 @@
 
 - id: construct9
   image: ../images/construct9.jpg
+
+- id: rear_windows
+  image: ../images/rear_windows.jpg
+
+- id: master_bed_framed
+  image: ../images/master_bed_framed.jpg
